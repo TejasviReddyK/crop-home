@@ -1,0 +1,311 @@
+html{
+  font-family: 'Crimson Text', Times New Roman, Times, serif;
+  font-size:1.5em;
+}
+@media (max-width:450px){
+  html{
+	font-size:1.3em;
+  }
+}
+body{
+  margin:0;
+}
+input,
+textarea,
+button{
+  font-family: inherit;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  padding-left: 0;
+  padding-inline-start: 0;
+  list-style: none;
+}
+h1{
+  font-family:Raleway;
+  font-size:1.2em;
+  text-transform:uppercase;
+  margin-top:0;
+  color:#ff7300;
+  text-shadow: 0px 1px 0px #ff7300;
+}
+.screen-reader{
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+  overflow: hidden;
+}
+.container{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  padding:0 45px;
+  box-sizing:border-box;
+}
+@media (max-width:450px){
+  .container{
+    padding:0 20px 0 30px;
+  }
+}
+@media (max-width:350px){
+  .container{
+    padding:0 15px 0 20px;
+  }
+}
+header .container{
+  display:table;
+}
+header p{
+  display:table-cell;
+  width:100%;
+}
+.logo img{
+  max-width:100%;
+}
+nav{
+  display:none;
+}
+nav ul{
+  display:table;
+}
+nav li{
+  display:table-cell;
+  white-space:nowrap;
+}
+nav a{
+  padding:10px;
+}
+.headline{
+  padding:20vh 0;
+  margin:0;
+  background:url('../images/bg-3.jpg') no-repeat center;
+  background-size:cover;
+  position:relative;
+  color:#fff;
+}
+.headline:before{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background:rgba(0,0,0,.5);
+}
+.headline p{
+  max-width:700px;
+  margin:auto;
+  position:relative;
+}
+p.statement{
+  font-size:2em;
+  line-height:1.15;
+  font-family:Raleway;
+  margin-bottom:.5em;
+}
+.about{
+  font-size: 1.2rem;
+  margin: 2em 0;
+}
+.quality,
+.farmer-welfare{
+  margin:4em 0;
+}
+@media (max-width:500px){
+  .quality,
+  .farmer-welfare{
+    margin:2em 0;
+  }
+}
+.quality img,
+.farmer-welfare img{
+  box-shadow:0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.35);
+}
+@media (min-width:1200px){
+  .quality h1:before,
+  .farmer-welfare h1:before{
+    content:"";
+    display:block;
+    margin-bottom:1em;
+    width:100px;
+    height:4px;
+    background-color:#069a00;
+  }
+}
+@media (max-width:1199px){
+  .quality h1,
+  .farmer-welfare h1{
+	margin-top:.4em;
+  }
+}
+.quality p:last-child{
+  font-weight:700;
+  line-height:1.5;
+}
+.read-more{
+  background-color:#ff7300;
+  color:white;
+  display:inline-block;
+  border-radius:10px;
+  padding:6px 18px 10px;
+  margin-top:20px;
+  box-shadow: 0 0 1px 1px #999;
+}
+@media (min-width:1200px){
+  .quality,
+  .farmer-welfare{
+    position:relative;
+    padding-right:600px;
+  }
+  .quality img,
+  .farmer-welfare img{
+    position:absolute;
+    width:550px;
+    right:0;
+    border-radius:2px;
+  }
+  .farmer-welfare img{
+    height: 570px;
+    object-fit: cover;
+  }
+}
+@media (max-width:1199px){
+  .quality img,
+  .farmer-welfare img{
+	 width:calc(100% + 90px);
+	 height:300px;
+	 margin-left:-45px;
+	 object-fit:cover;
+  }
+}
+@media (max-width:450px){
+  .quality img,
+  .farmer-welfare img{
+	 width:calc(100% + 50px);
+	 margin-left:-30px;
+  }
+}
+@media (max-width:350px){
+  .quality img,
+  .farmer-welfare img{
+	 width:calc(100% + 35px);
+	 margin-left:-20px;
+  }
+}
+#how-crop-home-helps-farmers{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  width:50%;
+  overflow:auto;
+  background:#fff;
+  box-shadow:0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+  min-width:320px;
+  padding-top:2.5em;
+  animation:slide-in 0.2s ease;
+  display:none;
+}
+@keyframes slide-in{
+  0%{
+	transform:translateY(10%);
+	opacity:0;
+  }
+  100%{
+	transform:translateY(0);
+	opacity:1;
+  }
+}
+#how-crop-home-helps-farmers h1{
+  color:#000;
+  text-shadow:none;
+  font-size:1.8em;
+}
+#how-crop-home-helps-farmers button{
+  padding:20px;
+  border-radius:50%;
+  background:#ff7300;
+  border:none;
+  box-shadow: 0 0 2px 2px rgba(60, 64, 67, 0.5);
+  position:fixed;
+  left:50%;
+  bottom:30px;
+  transform:translateX(-50%);
+}
+#how-crop-home-helps-farmers button svg{
+  display:block;
+  fill:#fff;
+}
+@media (max-width:767px){
+  #how-crop-home-helps-farmers{
+	width:100%;
+  }
+  #how-crop-home-helps-farmers button{
+	transform:none;
+	left:auto;
+	right:30px;
+  }
+}
+.contact-us{
+  background:#069a00;
+  padding:70px 0 50px;
+  color:#fff;
+}
+.contact-us h1{
+  color: #ffd000;
+  font-size: 40px;
+  margin-top:0;
+  text-align:center;
+}
+.contact-us dd{
+  margin-left:0;
+  font-size:1.85em;
+  font-weight:700;
+}
+@media (min-width:1200px){
+  .contact-us dl{
+    margin: auto;
+    column-count: 2;
+    column-gap: 0;
+  }
+  .contact-us dt:first-of-type,
+  .contact-us dd:first-of-type{
+    border-right: 1px solid #fff6;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .contact-us dt:nth-of-type(2),
+  .contact-us dd:nth-of-type(2){
+    padding-left: 20px;
+  }
+}
+@media (max-width:1199px){
+  .contact-us dl{
+	text-align:center;
+  }
+  .contact-us dt:nth-of-type(2){
+	margin-top:1em;
+  }
+}
+@media (max-width:500px){
+  .contact-us{
+	padding:40px 0 30px;
+  }
+  .contact-us dd{
+	font-size:1.5em;
+  }  
+}
+footer{
+  background-color:#000;
+  color:#fff;
+  overflow:hidden;
+  text-align:center;
+  font-weight:300;
+  font-size:.8em;
+}
